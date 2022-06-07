@@ -21,6 +21,5 @@ ch++;
 putchar('\n');
 i++;
 {
-print_alphabetx_x10
-}
+print_alphabet_x10;
 }
