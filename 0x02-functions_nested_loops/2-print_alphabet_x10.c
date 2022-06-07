@@ -20,6 +20,6 @@ ch++;
 putchar('\n');
 i++;
 {
-print_alphabet();
+print_alphabetx_x10();
 }
 }
