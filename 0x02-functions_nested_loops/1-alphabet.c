@@ -4,9 +4,10 @@
  * main - prints the alphabet, in lowercase
  * followed by a new line
  */
-void print_alphabet(void)
+int main(void)
 {
 char ch;
+print_alphabet();
 ch = 'a';
 while (ch <= 'z')
 {
