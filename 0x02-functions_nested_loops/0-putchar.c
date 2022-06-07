@@ -1,18 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - entry point 
- * Return: 0
+ * _putchar - writes the character c to stdout
+ * @c: the character to print
+ * Return: On the success 1
+ * on erro, -1 is returned and error none is set appropriately
  */
-int main(void)
+int _putchar(char c)
 {
-char c[0] = "_putchar";
-int i = 0;
-while (i < 9)
-{
-_putchar(c[i]);
-i++;
-}
-_putchar('\n');
-return (0);
+return (write(1, &c, 1));
 }
