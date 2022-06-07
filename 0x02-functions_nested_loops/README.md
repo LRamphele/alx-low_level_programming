@@ -1,2 +1,1 @@
-#!/bin/bash
-Function, nested loops
+Functions_nested_loops
