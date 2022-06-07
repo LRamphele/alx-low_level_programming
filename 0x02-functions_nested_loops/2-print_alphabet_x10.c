@@ -7,7 +7,6 @@
 void print_alphabet(void)
 {
 char i;
-print_alphabet_x10();
 for (i = 'a'; i <= 'z'; i++)
 {
 putchar(i);
