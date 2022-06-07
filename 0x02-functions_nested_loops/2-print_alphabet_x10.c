@@ -7,6 +7,7 @@
 void print_alphabet_x10(void)
 {
 char ch;
+print_alphabet_x10();
 int i;
 i = 0;
 while (i < 10)
@@ -20,6 +21,6 @@ ch++;
 putchar('\n');
 i++;
 {
-print_alphabetx_x10();
+print_alphabetx_x10
 }
 }
