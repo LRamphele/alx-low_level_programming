@@ -1,12 +1,20 @@
 #include <stdio.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: the character to print
- * Return: On the success 1
- * on erro, -1 is returned and error none is set appropriately
+ * main - prints _putchar, followed by a new line
+ * Return: Always 0 (Success)
  */
-int _putchar(char c)
+int main(void)
 {
-return (fwrite(1, &c, 1));
+_putchar('H');
+_putchar('o');
+_putchar('l');
+_putchar('b');
+_putchar('e');
+_putchar('r');
+_putchar('t');
+_putchar('o');
+_putchar('n');
+_putchar('\n');
+return (0);
 }
