@@ -19,5 +19,7 @@ ch++;
 }
 putchar('\n');
 i++;
+{
+print_alphabet();
 }
 }
