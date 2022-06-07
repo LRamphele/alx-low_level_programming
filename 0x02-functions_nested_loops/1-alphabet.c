@@ -7,7 +7,6 @@
 int main(void)
 {
 char ch;
-print_alphabet();
 ch = 'a';
 while (ch <= 'z')
 {
