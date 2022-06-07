@@ -1,20 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - prints _putchar, followed by a new line
+ * main - Prints _putchar, followed by a new line
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-putchar('H');
-putchar('o');
-putchar('l');
-putchar('b');
-putchar('e');
-putchar('r');
+putchar('_');
+putchar('p');
+putchar('u');
 putchar('t');
-putchar('o');
-putchar('n');
+putchar('c');
+putchar('h');
+putchar('a');
+putchar('r');
 putchar('\n');
 return (0);
 }
