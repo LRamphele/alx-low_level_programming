@@ -1,27 +1,38 @@
 #include "main.h"
 
 /**
- * create_file - creates a file and fills it with text
- * @filename: name of the file to create
- * @text_content: text to write in the file
- * Return: 1 on success, -1 on failure
+ * read_textfile - reads a text file and prints it to the standard output
+ * @filename: name of the file to be read
+ * @letters: number of letters to read and print
+ * Return: the number of letters printed, or 0 if it failed
  */
-int create_file(const char *filename, char *text_content)
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-int fd, t, s = 0;
+int fd;
+int s, t;
+char *buf;
 if (!filename)
-return (-1);
-fd = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+return (0);
+fd = open(filename, O_RDONLY);
 if (fd < 0)
-return (-1);
-if (text_content)
+return (0);
+buf = malloc(sizeof(char) * letters);
+if (!buf)
+return (0);
+s = read(fd, buf, letters);
+if (s < 0)
 {
-while (text_content[s])
-s++;
-t = write(fd, text_content, s);
-if (t != s)
-return (-1);
+free(buf);
+return (0);
 }
+buf[s] = '\0';
 close(fd);
-return (1);
+t = write(STDOUT_FILENO, buf, s);
+if (t < 0)
+{
+free(buf);
+return (0);
+}
+free(buf);
+return (t);
 }
